@@ -1,0 +1,18 @@
+{% extends 'index.html' %}
+{% block head %}
+	<link rel="stylesheet" type="text/css" href="static/css/key.css">
+{% endblock %}
+
+{% block content %}
+	{{ message }}
+	<h1>Введите пароль</h1>
+	<div id="wrapper">
+		<form id="signin" method="" action="" autocomplete="off">
+			<input type="password" id="pass" name="pass" placeholder="password" />
+			<a href="/entrance">
+				<button type="submit">&#xf0da;</button>
+			</a>
+			<p>forgot your password? <a href="#">click here</a></p>
+		</form>
+	</div>
+{% endblock %}

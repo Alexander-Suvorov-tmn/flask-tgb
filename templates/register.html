@@ -1,0 +1,30 @@
+{% extends 'index.html' %}
+{% block head %}
+<link rel="stylesheet" type="text/css" href="static/css/register.css">
+{% endblock %}
+
+{% block content %}
+<form action='/register' method='post'>
+    <ul class="form">
+        {{ message }}
+        <li>
+            <input type="first_name" name="first_name" placeholder="Имя">
+        </li>
+        <li>
+            <input type="second_name" name="second_name" placeholder="Фамилия">
+        </li>
+        <li>
+            <input type="password" name="password_check" placeholder="Повторите пароль">
+        </li>
+        <li>
+            <input type="text" name="phone_number" placeholder="Номер Телефона">
+        </li>
+        <li>
+            <input type="text" name="email" placeholder="email">
+        </li>
+        <li>
+            <button type="submit">Зарегестрироваться</button>
+        </li>
+    </ul>
+</form>
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends 'index.html' %}
+{% block head %}
+<link rel="stylesheet" type="text/css" href="static/css/choice.css">
+{% endblock %}
+
+{% block content %}
+<p style="text-align:center; font-size:40px; color:#ff3300">{{ message }}</p>
+ <div class="middle">
+      <a href="/key" class="btn btn2">Получить код</a>
+      <a href="/choice" class="btn btn2">Зарегистрироваться в Telegram</a>
+ </div>
+{% endblock %}
